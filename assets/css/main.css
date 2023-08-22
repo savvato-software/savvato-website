@@ -100,10 +100,10 @@ input, select, textarea {
 
 	body {
 		background-color: #5284e1;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #75bacb 15%, #0c1e73 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #75bacb 15%, #0c1e73 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #75bacb 15%, #0c1e73 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #75bacb 15%, #0c1e73 85%);
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #ffffff 15%, #e5ebf6 85%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #ffffff 15%, #e5ebf6 85%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #ffffff 15%, #e5ebf6 85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #ffffff 15%, #e5ebf6 85%);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -121,7 +121,8 @@ input, select, textarea {
 
 	body {
 		background-color: #935d8c;
-		color: rgba(255, 255, 255, 0.65);
+		/*color: rgba(255, 255, 255, 0.65);*/
+		color: dimgray;
 	}
 
 	body, input, select, textarea {
@@ -315,7 +316,8 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		/*color: #ffffff;*/
+		color: dimgray;
 	}
 
 	blockquote {
@@ -2349,7 +2351,8 @@ input, select, textarea {
 
 	.icon.alt {
 		border-color: rgba(255, 255, 255, 0.35);
-		color: #ffffff;
+		/*color: #ffffff;*/
+		color: dimgray;
 	}
 
 		.icon.alt:hover {
@@ -2488,7 +2491,8 @@ input, select, textarea {
 	}
 
 	dl dt {
-		color: #ffffff;
+		/*color: #ffffff;*/
+		color: dimgray;
 	}
 
 /* Actions */
@@ -3258,22 +3262,29 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		-moz-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
-		-webkit-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
-		-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
-		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+		/*-moz-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;*/
+		/*-webkit-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;*/
+		/*-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;*/
+		/*transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;*/
 		background-color: #ffffff;
 		color: #636363;
 		position: absolute;
 		width: 64em;
 		max-width: calc(100% - 4em);
 		padding: 1em;
-		background-color: #f7f7f7;
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
 		cursor: default;
-		text-align: center;
 	}
+
+		#nav .image {
+			margin-right: 10px; /* Adjust the spacing as needed */
+		}
+
+		#nav img {
+			max-width: 50px; /* Adjust the image size as needed */
+			height: auto;
+		}
 
 		#nav input, #nav select, #nav textarea {
 			color: #636363;
@@ -3356,6 +3367,7 @@ input, select, textarea {
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 			z-index: 10000;
+			display: flex;
 		}
 
 			#nav.alt ul li {
