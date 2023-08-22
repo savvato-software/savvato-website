@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 	</head>
 	<body class="is-preload">
 
@@ -18,19 +19,21 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/savvato-logo.svg" alt="" /></span>
-						<h1>Savvato</h1>
-						<p>A software and recruiting company that brings together candidates, mentors, and hiring managers FTW.</p>
+					<header id="header" >
+						<div>
+<!--						<span class="logo"><img src="images/savvato-logo.svg" alt="" /></span>-->
+							<h1 style="text-shadow: 1px 1px 2px, 0 0 1em blue, 0 0 0.2em blue;">Savvato</h1>
+							<p style="font-weight: bold; color:lightblue;">Software Development. Mentoring. Employment resourcing.</p>
+						</div>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">First Section</a></li>
-							<li><a href="#second">Second Section</a></li>
-							<li><a href="#cta">Get Started</a></li>
+							<li><a href="#intro" class="active">What is Savvato?</a></li>
+							<li><a href="#mi">Mock Interview</a></li>
+							<li><a href="#mpj">Mock Job</a></li>
+							<li><a href="#contactus">Contact Us</a></li>
 						</ul>
 					</nav>
 
@@ -50,38 +53,15 @@
 										<br/>
 										Through free and low-cost mentoring services, we identify candidate skills, and mentor candidates with effective advice, challenges, and feedback. We develop software to identify matches between employer wants, and our candidate’s skills. When we find a great match, we work to get that candidate placed in a great job.
 									</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
+<!--									<ul class="actions">-->
+<!--										<li><a href="generic.html" class="button">Learn More</a></li>-->
+<!--									</ul>-->
 								</div>
-								<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+								<span class="image"><img src="images/savvato-logo.jpg" alt="" /></span>
 							</div>
 						</section>
 
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
-									<div class="content">
-										<header class="major">
-											<h2>Mock Programming Job</h2>
-										</header>
-										<p>
-											The Mock Programming Job is an at-will “learn on the job” project in which
-											candidates take on tasks, and work under professional standards, as they
-											would in a real job. They do the research to implement solutions, and they
-											receive feedback on their efforts. Our philosophy is that the best way to
-											prepare for the job is to do the job. Participants gain real world experience
-											they can speak to in an interview, a sharpened set of skills, and, most of all,
-											the confidence that they can hit the ground running in their next opportunity.
-										</p>
-										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
-										</ul>
-									</div>
-								</div>
-							</section>
-
-						<section id="intro" class="main">
+						<section id="mi" class="main">
 							<div class="spotlight">
 								<div class="content">
 									<header class="major">
@@ -99,10 +79,33 @@
 										candidate / employer matches.
 									</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn More</a></li>
+										<li><a href="mock-interview.html" class="button">Learn More</a></li>
 									</ul>
 								</div>
-								<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+								<span class="image"><img src="images/mi.jpg" alt="" /></span>
+							</div>
+						</section>
+
+						<section id="mpj" class="main">
+							<div class="spotlight">
+								<span class="image-left"><img src="images/mpj.jpg" alt="" /></span>
+								<div class="content-left">
+									<header class="major">
+										<h2>Mock Programming Job</h2>
+									</header>
+									<p>
+										The Mock Programming Job is an at-will “learn on the job” project in which
+										candidates take on tasks, and work under professional standards, as they
+										would in a real job. They do the research to implement solutions, and they
+										receive feedback on their efforts. Our philosophy is that the best way to
+										prepare for the job is to do the job. Participants gain real world experience
+										they can speak to in an interview, a sharpened set of skills, and, most of all,
+										the confidence that they can hit the ground running in their next opportunity.
+									</p>
+									<ul class="actions">
+										<li><a href="mock-job.html" class="button">Learn More</a></li>
+									</ul>
+								</div>
 							</div>
 						</section>
 
@@ -175,55 +178,70 @@
 							</section>
 							-->
 
-						<iframe src="https://calendar.google.com/calendar/embed?src=e025771bbd7ed74b86109dfe42ab6b0f4137d23fca0b65eccf68cc605407beb9%40group.calendar.google.com&ctz=America%2FDenver" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+						<section id="contactus" class="main special">
+							<p>Send us a message! We would love to talk with you!</p>
+							<form action="https://formspree.io/f/xknljapp" method="POST">
+								<div class="row gtr-uniform">
+									<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+									<div class="col-6 col-12-xsmall"><input type="email" name="_replyto" id="email" placeholder="Email" /></div>
+									<div class="col-12"><input type="hidden" name="_subject" id="subject" value="Savvato Website Form Message" /></div>
+									<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" class="primary" value="Send Message" /></li>
+											<li><input type="reset" value="Reset Form" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
 
 						<!-- Get Started -->
-							<section id="cta" class="main special">
-								<header class="major">
-									<h2>Congue imperdiet</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button primary">Get Started</a></li>
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
+<!--							<section id="cta" class="main special">-->
+<!--								<header class="major">-->
+<!--									<h2>Congue imperdiet</h2>-->
+<!--									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />-->
+<!--									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>-->
+<!--								</header>-->
+<!--								<footer class="major">-->
+<!--									<ul class="actions special">-->
+<!--										<li><a href="generic.html" class="button primary">Get Started</a></li>-->
+<!--										<li><a href="generic.html" class="button">Learn More</a></li>-->
+<!--									</ul>-->
+<!--								</footer>-->
+<!--							</section>-->
 
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn More</a></li>
-							</ul>
+							<h2>Savvato</h2>
+							<p>Life is about who you meet, and the things you build with them. We're building a community which creates great software to teach people how to create great software. Of course, we've all gotta eat, so our great software matches candidates to employers. Decide you want to be a programmer (or a better programmer!) and we'll give you the experience you need to get the job.</p>
+<!--							<ul class="actions">-->
+<!--								<li><a href="generic.html" class="button">Learn More</a></li>-->
+<!--							</ul>-->
 						</section>
 						<section>
-							<h2>Etiam feugiat</h2>
+							<h2>Chat with us!</h2>
 							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
+<!--								<dt>Address</dt>-->
+<!--								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>-->
+<!--								<dt>Phone</dt>-->
+<!--								<dd>(000) 000-0000 x 0000</dd>-->
 								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
+								<dd><a href="mailto:hello@savvato.com">hello@savvato.com</a></dd>
 							</dl>
 							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+								<li><a href="https://www.linkedin.com/company/savvato" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+<!--								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>-->
+<!--								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>-->
+								<li><a href="https://www.github.com/savvato-software" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+<!--								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>-->
 							</ul>
 						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; Savvato Software. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
-
 			</div>
 
 		<!-- Scripts -->

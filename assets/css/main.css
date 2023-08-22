@@ -2968,6 +2968,19 @@ input, select, textarea {
 
 		}
 
+#header .image-left {
+	display: inline-block;
+	padding: 0.65em;
+	border-radius: 100%;
+	border: solid 1px;
+}
+
+#header .image-left img {
+	display: block;
+	border-radius: 100%;
+	width: 8em;
+}
+
 /* Spotlight */
 
 	.spotlight {
@@ -2981,6 +2994,22 @@ input, select, textarea {
 		align-items: center;
 		margin: 0 0 2em 0;
 	}
+
+		.spotlight .content-left {
+			-moz-flex: 1;
+			-webkit-flex: 1;
+			-ms-flex: 1;
+			flex: 1;
+			margin-left: 4em;
+		}
+
+			.spotlight .content-left > :last-child {
+				margin-bottom: 0;
+			}
+
+			.spotlight .content-left header.major {
+				margin: 0 0 2em 0;
+			}
 
 		.spotlight .content {
 			-moz-flex: 1;
@@ -2997,6 +3026,23 @@ input, select, textarea {
 				margin: 0 0 2em 0;
 			}
 
+		.spotlight .image-left {
+			display: inline-block;
+			padding: 0.65em;
+			border-radius: 100%;
+			border: solid 1px;
+		}
+
+			.spotlight .image-left p {
+				margin-left: 4em;
+			}
+
+			.spotlight .image-left img {
+				display: block;
+				border-radius: 100%;
+				width: 16em;
+			}
+
 		.spotlight .image {
 			display: inline-block;
 			margin-left: 4em;
@@ -3010,6 +3056,7 @@ input, select, textarea {
 				border-radius: 100%;
 				width: 16em;
 			}
+
 
 		@media screen and (max-width: 980px) {
 
@@ -3581,7 +3628,7 @@ input, select, textarea {
 		}
 
 		#main > .main {
-			padding: 5em 5em 3em 5em ;
+			padding: 2em 5em 3em 5em ;
 			border-top: solid 1px #dddddd;
 		}
 
@@ -3783,3 +3830,49 @@ input, select, textarea {
 			}
 
 		}
+
+#content .image-container {
+	position: relative;
+	/*display: inline-block;*/
+}
+
+#content .image-container img {
+	display: block;
+	max-width: 100%;
+}
+
+#content .image-container div {
+	position: absolute;
+	z-index: 1; /* Place the text above the image */
+	bottom: 3em;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 10px;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+}
+
+
+.container1 {
+	display: flex;
+}
+
+.container1 > div {
+	flex: 3;
+	margin-right: 20px; /* Add some spacing between the divs */
+}
+
+.tech-stack1 {
+	flex: 1; /* This will take up equal space alongside the other div */
+}
+
+.tech-stack1 table {
+	border-collapse: collapse;
+}
+
+.tech-stack1 table, .tech-stack1 th, .tech-stack1 td {
+	border: 1px solid black;
+	padding: 5px;
+}
